@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,7 +18,7 @@ namespace UrnaEletronica.Controllers
       var candidates = await context.Candidates.ToListAsync();
       return candidates;
     }
-
+    
     [HttpPost]
     [Route("")]
     public async Task<ActionResult<Candidate>> Post([FromServices] DataContext context, [FromBody] Candidate model)
