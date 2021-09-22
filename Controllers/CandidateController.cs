@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UrnaEletronica.Data;
@@ -11,6 +12,7 @@ namespace UrnaEletronica.Controllers
   [Route("v1/candidates")]
   public class CandidateController : ControllerBase
   {
+    [EnableCors]
     [HttpGet]
     [Route("")]
     public async Task<ActionResult<List<Candidate>>> Get([FromServices] DataContext context)
