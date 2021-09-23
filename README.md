@@ -1,11 +1,11 @@
 URNA ELETRÔNICA
 ---
 
-###Resumo
+### Resumo
 
 Experimento e estudos de criação de API e um SPA para testes de consumo dos dados.
 
-###Etapas para realizar o teste
+### Etapas para realizar o teste
 
 - Faça a clonagem deste repositório
 - Abra a IDE que achar mais confortável para edição do código (Visual Studio, VS Code, RIDER etc).
@@ -48,7 +48,7 @@ Experimento e estudos de criação de API e um SPA para testes de consumo dos da
  ![](img/SPAUrna.png)
   - obs.: Página em construção :rocket: ... não estranhe por enquanto :eyes:
 
-###Considerações
+### Considerações
 
 Este foi um pequeno desafio, bem interessante para praticar e aplicar alguns conceitos no Backend com .Net quanto no Frontend (essa parte foi pura gambiarra :eyes: :rofl:).
 
