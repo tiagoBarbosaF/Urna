@@ -50,6 +50,6 @@ Experimento e estudos de criação de API e um SPA para testes de consumo dos da
 
 ###Considerações
 
-Este foi um pequeno desafio, bem interessante para praticar e aplicar alguns conceitos no Backend com .Net quanto no Frontend (essa parte foi pura gambiarra :eyes::rofl:).
+Este foi um pequeno desafio, bem interessante para praticar e aplicar alguns conceitos no Backend com .Net quanto no Frontend (essa parte foi pura gambiarra :eyes: :rofl:).
 
 Em breve irei finalizar este projeto :beers:
