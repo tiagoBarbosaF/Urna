@@ -1,32 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <title>Urna Eletrônica</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+	<meta charset = "UTF-8">
+	<title>Urna Eletrônica</title>
+	<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+	<link rel = "preconnect" href = "https://fonts.googleapis.com">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel = "stylesheet">
 </head>
-<body>
-    <div class="uk-container">
-        <h1 class="uk-margin-xlarge-top uk-heading-line uk-text-center"><span>Vote aqui</span></h1>
 
-        <div class="uk-margin">
-            <div class="uk-card uk-card-default uk-card-body">
-                <div class="uk-child-width-expand@s uk-text-center uk-padding" uk-grid>
-                    <ul uk-tab>
-                        <li class="uk-active"><a href="#">Votação</a></li>
-                        <li><a href="#">Candidatos</a></li>
-                        <li><a href="#">Cadastro de Candidato</a></li>
-                        <li><a href="#">Total de Votos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+<body>
+	<div class = "uk-container">
+		<h1 class = "uk-margin-xlarge-top uk-heading-line uk-text-center"><span>ELEIÇÕES 2050</span></h1>
+
+		<div class = "uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+
+			<div class = "uk-card uk-card-default uk-card-body">
+				<div class = "uk-card-header">
+					<div class = "uk-grid-small uk-flex-middle" uk-grid>
+						<div class = "uk-width-auto">
+							<span uk-icon = "file-edit"></span>
+						</div>
+						<div class = "uk-width-expand">
+							<h3 class = "uk-card-title uk-margin-remove-bottom">Votação</h3>
+						</div>
+					</div>
+				</div>
+				<div class = "uk-card-body uk-text-center">
+					<h4>Comece a votar</h4>
+					<p></p>
+				</div>
+				<div class = "uk-card-footer">
+					<button class = "uk-button uk-button-primary uk-align-center" type = "button"
+					        uk-toggle = "target: #modal-votacao">Clique aqui
+					</button>
+				</div>
+			</div>
+
+			<div class = "uk-card uk-card-default uk-card-body">
+				<div class = "uk-card-header">
+					<div class = "uk-grid-small uk-flex-middle" uk-grid>
+						<div class = "uk-width-auto">
+							<span uk-icon = "users"></span>
+						</div>
+						<div class = "uk-width-expand">
+							<h3 class = "uk-card-title uk-margin-remove-bottom">Candidatos</h3>
+						</div>
+					</div>
+				</div>
+				<div class = "uk-card-body uk-text-center">
+					<h4>Lista com todos os candidatos participantes</h4>
+				</div>
+				<div class = "uk-card-footer">
+					<button class = "uk-button uk-button-primary uk-align-center" type = "button"
+					        uk-toggle = "target: #modal-candidates">Clique aqui
+					</button>
+				</div>
+			</div>
+
+			<div class = "uk-card uk-card-default uk-card-body">
+				<div class = "uk-card-header">
+					<div class = "uk-grid-small uk-flex-middle" uk-grid>
+						<div class = "uk-width-auto">
+							<span uk-icon = "rss"></span>
+						</div>
+						<div class = "uk-width-expand">
+							<h3 class = "uk-card-title uk-margin-remove-bottom">Votos</h3>
+						</div>
+					</div>
+				</div>
+				<div class = "uk-card-body uk-text-center">
+					<h4>Acompanhe o andamento da eleição neste painel</h4>
+				</div>
+				<div class = "uk-card-footer">
+					<button class = "uk-button uk-button-primary uk-align-center" type = "button"
+					        uk-toggle = "target: #modal-votes">Clique aqui
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!--	Modals-->
+		<div id = "modal-votacao" uk-modal>
+			<div class = "uk-modal-dialog uk-modal-body">
+				<h2 class = "uk-modal-title uk-heading-line uk-text-center"><span>Comece sua votação</span></h2>
+				<form action = "">
+
+					<div class = "uk-margin">
+						<label class = "uk-margin-auto" for = "modal-votacao">Escolha o Partido</label>
+						<select name = "" id = "" class = "uk-select">
+							<option value = "10">10</option>
+							<option value = "20">20</option>
+							<option value = "30">30</option>
+							<option value = "40">40</option>
+							<option value = "50">50</option>
+						</select>
+					</div>
+
+					<div class = "uk-margin">
+						<label for = "modal-votacao">Nome Candidato</label>
+						<input class = "uk-input" type = "text">
+					</div>
+
+					<div class = "uk-margin">
+						<label for = "modal-votacao">Nome Vice</label>
+						<input class = "uk-input" type = "text">
+					</div>
+
+					<div class = "uk-margin">
+						<label for = "modal-votacao">Data Voto</label>
+						<input class = "uk-input" type = "date">
+					</div>
+
+				</form>
+				<p class = "uk-text-right">
+					<button class = "uk-button uk-button-default uk-modal-close" type = "button">Cancel</button>
+					<button class = "uk-button uk-button-primary" type = "button">Save</button>
+				</p>
+			</div>
+		</div>
+
+		<div id = "modal-candidates" uk-modal>
+			<div class = "uk-modal-dialog uk-modal-body">
+				<h2 class = "uk-modal-title uk-heading-line uk-text-center"><span>Lista dos Candidatos</span></h2>
+				<table class="uk-table uk-table-striped">
+					<thead>
+					<tr>
+						<th>Candidato</th>
+						<th>Vice</th>
+						<th>Legenda</th>
+					</tr>
+					</thead>
+					<tbody id="tbodyCandidates"></tbody>
+				</table>
+				<p class = "uk-text-right">
+					<button class = "uk-button uk-button-default uk-modal-close" type = "button">Cancel</button>
+					<button class = "uk-button uk-button-primary" type = "button">Save</button>
+				</p>
+			</div>
+		</div>
+
+		<div id = "modal-votes" uk-modal>
+			<div class = "uk-modal-dialog uk-modal-body">
+				<h2 class = "uk-modal-title uk-heading-line uk-text-center"><span>Acompanhe a votação</span></h2>
+				<table class="uk-table uk-table-striped">
+					<thead>
+					<tr>
+						<th>Candidato</th>
+						<th>Legenda</th>
+						<th>Total Votos</th>
+					</tr>
+					</thead>
+					<tbody id="tbodyVotes"></tbody>
+				</table>
+					<button class = "uk-button uk-button-default uk-modal-close" type = "button">Cancel</button>
+					<button class = "uk-button uk-button-primary" type = "button">Save</button>
+				</p>
+			</div>
+		</div>
+		<script src = "js/main.js"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+	</div>
 </body>
 </html>
